@@ -6,47 +6,54 @@ header {
     align-items: center; 
     padding: 0px; 
 }
+.logos {
+    text-align: right;   /*j'aligne mes logos à droite*/
+    color: white;        
+    margin-top: 20px;
+}
 
+main {
+    padding: 30px; /*on rajoute un espace sur la gauche*/
+}
 body {
-    background-color: #041821;
-    font-family: "Montserrat";
+    background-color: #041821;  /* couleur de fond*/
+    font-family: "Montserrat";     /*police du body*/
     padding: 20px;
 }
 h1 {
     color: #fbfcf7;
     font-family: "Yeseva";
 }
-.vert {
-    color: #20c696;
-}
+
+
 
 h2 {
-    color: #fffdfc
+    color: #fffdfc;
+    font-family: "Yeseva";    
+    line-height: 10px;
 }
 
-.logos {
-    text-align: right;
-    color: white;
-    margin-top: 20px;
+.vert {
+    color: #20c696;       /*une classe pour ne mettre qu'une partie en couleur
 }
+
+
+
 
 .lorem {
     color:#5e6c6e;
-    text-align: left;
-    max-width: 600px;
+    text-align: left;     
+    max-width: 600px;    /*pour que le texte soit en plusieurs lignes*/
 }
 
-.page {
-    text-align: center;
-}
 
 ul {
-    text-align: center;
+    text-align: center;   /*on centre la liste*/
 }
 .menu ul {
     list-style-type: none;
     padding: 0;           
-    display: flex;        
+    display: flex;          /*pour mettre les élément en ligne*/
     color: white;
 }
 
@@ -63,8 +70,24 @@ ul {
     background-color: #20c696;
 }
 
-h3 {
+
+footer {
     color: #5a6c70;
-    text-align: center;
-    font-size: 10px;
+    text-align: center;     /*on centre le footer*/
+    font-size: 10px;         /*on reduit la taille du texte*/
+}
+/* les changements pour les versions téléphones et tablette*/
+
+@media (max-width: 768px) {
+    .photos img {
+        width: calc(50% - 20px); /* Ajuste la taille pour 2 images par ligne */
+    }
+
+    .menu li {
+        margin: 0 5px; /* Réduire l'espace entre les éléments du menu */
+        font-size: 1em; /* Réduire la taille du texte */
+    }
+    h2 {
+        line-height: 18px;
+    }
 }

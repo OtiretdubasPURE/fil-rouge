@@ -4,3 +4,19 @@ body {
     background-color: #041821;
     font-family: "Montserrat";
 }
+h1 {
+    color: #fbfcf7;
+    font-family: "Yeseva";
+}
+.vert {
+    color: #20c696;
+}
+
+h2 {
+    color: #fffdfc
+}
+
+.logos {
+    text-align: right;
+    color: white;
+}

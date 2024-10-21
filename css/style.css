@@ -19,4 +19,29 @@ h2 {
 .logos {
     text-align: right;
     color: white;
+    margin-top: 20px;
 }
+
+.lorem {
+    color:#5e6c6e;
+    text-align: left;
+    display: flex;
+}
+
+.page {
+    text-align: center;
+}
+
+.menu {
+    color: white;
+    text-align: center;
+}
+
+.stabilo {
+    background-color: #20c696;
+}
+
+.menu { 
+    flex-direction: row ;
+} 
+

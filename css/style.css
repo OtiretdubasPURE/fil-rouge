@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0px; 
+}
+
 body {
     background-color: #041821;
     font-family: "Montserrat";
+    padding: 20px;
 }
 h1 {
     color: #fbfcf7;
@@ -25,23 +33,33 @@ h2 {
 .lorem {
     color:#5e6c6e;
     text-align: left;
-    display: flex;
+    max-width: 600px;
 }
 
 .page {
     text-align: center;
 }
 
-.menu {
-    color: white;
+ul {
     text-align: center;
 }
+.menu ul {
+    list-style-type: none;
+    padding: 0;           
+    display: flex;        
+    color: white;
+}
 
+.menu li {
+    margin-right: 20px;
+    
+}
+.menu {
+    display: flex; /* Utilise flexbox pour le layout */
+    justify-content: center; /* Centre horizontalement les éléments */
+    margin: 20px 0; /* Espace au-dessus et en dessous du menu */
+}
 .stabilo {
     background-color: #20c696;
 }
-
-.menu { 
-    flex-direction: row ;
-} 
 
